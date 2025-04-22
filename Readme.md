@@ -27,24 +27,3 @@ CD 📅 Week 1: Research & Planning (Day 1 - Day 7) 👉 Goal: Finalize the app 
 
 📅 Week 4: Extra Features, Testing & Deployment (Day 22 - Day 28) 👉 Goal: Refine AI, improve UI, and deploy the project. Day 22 - 25: ✅ Add User Feedback System (rate AI meal suggestions). ✅ Improve AI accuracy based on user feedback. ✅ Add basic animations & smooth UI transitions. Day 26 - 28: ✅ Conduct real-user testing (get feedback from testers). ✅ Fix bugs, improve UI, and finalize core features. ✅ Deploy backend on Render/Railway & frontend on Vercel/Netlify.
 
-About
-This is your first repository
-
-Resources
- Readme
- Activity
- Custom properties
-Stars
- 0 stars
-Watchers
- 1 watching
-Forks
- 0 forks
-Report repository
-Releases
-No releases published
-Create a new release
-Packages
-No packages published
-Publish your first package
-Footer
