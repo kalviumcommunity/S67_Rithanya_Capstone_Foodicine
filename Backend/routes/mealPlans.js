@@ -41,6 +41,22 @@ router.put('/:mealPlanId/meals/:mealIndex', async (req, res) => {
 });
 
 
+router.get('/user/:userId', async (req, res) => {
+  try {
+    const { userId } = req.params;
+    const mealPlans = await meal.find({ userId });
+
+    if (!mealPlans || mealPlans.length === 0) {
+      return res.status(404).json({ message: 'No meal plans found for this user' });
+    }
+
+    res.json(mealPlans);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+});
+
+
 module.exports = router;
 
 
