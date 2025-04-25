@@ -5,6 +5,7 @@ const mealPlanSchema = new mongoose.Schema({
   meals: [{
     name: {
       type:String,
+      required:true,
       
     },
     type: { type: String, enum: ['Breakfast', 'Lunch', 'Dinner', 'Snack', 'Post-Workout'] },
