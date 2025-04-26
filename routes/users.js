@@ -1,11 +1,8 @@
 
 const express = require('express');
-const User = require('../models/User');
+const User = require('../models/user');
 const router = express.Router();
   
-router.get('/ping', (req, res) => res.send('pong'));
-
-
 router.post('/', async (req, res) => {
   try {
     const user = new User(req.body);

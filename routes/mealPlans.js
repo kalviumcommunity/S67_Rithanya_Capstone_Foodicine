@@ -1,19 +1,29 @@
 const express = require('express');
-const meal = require('../models/MealPlan');
+const meal= require('../models/MealPlan');
 const router = express.Router();
+const User = require('../models/user');
 
 
 
 router.post('/', async (req, res) => {
   try {
-    const mealPlan = new meal(req.body);
-    await mealPlan.save();
-    res.status(201).json(mealPlan);
-  } catch (error) {
-   res.status(400).json({ message: error.message }); 
-  }
-}); 
+    const { userId, meals, date } = req.body;
 
+    
+    const user = await User.findById(userId);
+    if (!user) {
+      return res.status(404).json({ error: 'User not found' });
+    }
+
+  
+    const newMealPlan = new meal ({ userId, meals, date });
+    await newMealPlan.save();
+
+    res.status(201).json(newMealPlan);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
 
 router.put('/:mealPlanId/meals/:mealIndex', async (req, res) => {
   try {
