@@ -30,3 +30,4 @@ Week 4: Testing, Optimization & Deployment ✅ Testing & Bug Fixes: Conduct unit
 
 📅 Week 4: Extra Features, Testing & Deployment (Day 22 - Day 28) 👉 Goal: Refine AI, improve UI, and deploy the project. Day 22 - 25: ✅ Add User Feedback System (rate AI meal suggestions). ✅ Improve AI accuracy based on user feedback. ✅ Add basic animations & smooth UI transitions. Day 26 - 28: ✅ Conduct real-user testing (get feedback from testers). ✅ Fix bugs, improve UI, and finalize core features. ✅ Deploy backend on Render/Railway & frontend on Vercel/Netlify.
 
+Frontend deployment link : https://calm-frangipane-87ed79.netlify.app/
